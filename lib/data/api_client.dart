@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:developer';
 
 import 'package:fitpage_assignment/domain/rule.dart';
 import 'package:http/http.dart' as http;
@@ -18,7 +17,6 @@ class ApiClient {
     if (response.statusCode == 200) {
       final List<dynamic> jsonList = json.decode(response.body);
       final rules = jsonList.map((json) => Rule.fromJson(json)).toList();
-      log(rules.toString());
       return rules;
     } else {
       throw Exception('Failed to fetch data');
