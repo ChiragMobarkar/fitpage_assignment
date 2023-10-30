@@ -42,8 +42,6 @@ class Criteria {
       variable: json['variable'] != null
           ? Map<String, dynamic>.from(json['variable'])
           : null,
-      // variable:
-      //     json['variable'] != null ? Variable.fromJson(json['variable']) : null,
     );
   }
 }
