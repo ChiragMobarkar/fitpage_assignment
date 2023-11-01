@@ -14,17 +14,9 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  // final ruleBloc = RuleBloc();
-
-  @override
-  void initState() {
-    super.initState();
-    // ruleBloc.fetchRules();
-  }
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: StocksScreen(),
     );
   }
